@@ -1,0 +1,108 @@
+{
+  "fecha_ejecucion": "2026-11-26T21:12:43",
+  "fuente_principal": "Wikimedia Commons API (https://commons.wikimedia.org/w/api.php)",
+  "fuente_respaldo": "Openverse API (https://api.openverse.org/v1/images/)",
+  "user_agent": "ITM-VisionArtificial-Entrega4/1.0 (Proyecto academico CIGEM Grupo 190202024-4; contacto: estudiante@correo.itm.edu.co)",
+  "pausa_segundos": 0.5,
+  "criterios_curacion": {
+    "resolucion_minima_px": 150,
+    "dhash_distancia_hamming_max": 6,
+    "rechaza_corruptas": true,
+    "rechaza_no_rgb_o_gris": true,
+    "rechaza_duplicados_sha256_y_dhash": true
+  },
+  "robots_txt": {
+    "wikimedia_api": {
+      "robots_url": "https://commons.wikimedia.org/robots.txt",
+      "target_url": "https://commons.wikimedia.org/wiki/Category:Emeralds",
+      "http_status": 200,
+      "permitido": true,
+      "crawl_delay": null,
+      "nota": "robots.txt consultado y validado correctamente."
+    },
+    "wikimedia_upload": {
+      "robots_url": "https://upload.wikimedia.org/robots.txt",
+      "target_url": "https://upload.wikimedia.org/wikipedia/commons/",
+      "http_status": 200,
+      "permitido": true,
+      "crawl_delay": null,
+      "nota": "robots.txt consultado y validado correctamente."
+    },
+    "openverse_api": {
+      "robots_url": "https://api.openverse.org/robots.txt",
+      "target_url": "https://api.openverse.org/v1/images/",
+      "http_status": 200,
+      "permitido": false,
+      "crawl_delay": null,
+      "nota": "robots.txt consultado y validado correctamente."
+    }
+  },
+  "clases": {
+    "esmeralda_suelta": {
+      "nombre_legible": "Esmeralda suelta",
+      "terminos_busqueda": [
+        "emerald gemstone",
+        "cut emerald",
+        "emerald crystal",
+        "trapiche emerald",
+        "emerald mineral",
+        "emerald beryl"
+      ],
+      "propias_encontradas": 47,
+      "propias_validas": 45,
+      "propias_eliminadas_corruptas": 0,
+      "propias_eliminadas_resolucion": 0,
+      "propias_eliminadas_no_rgb_gris": 0,
+      "propias_eliminadas_duplicados": 2,
+      "scraping_candidatos_encontrados": 180,
+      "scraping_descargadas": 136,
+      "scraping_errores_http": 0,
+      "eliminadas_corruptas": 0,
+      "eliminadas_resolucion": 0,
+      "eliminadas_no_rgb_gris": 1,
+      "eliminadas_duplicados": 0,
+      "scraping_validas": 135,
+      "eliminadas_scraping_total": 1,
+      "total_final": 180,
+      "cumple_min_150": true
+    },
+    "esmeralda_montada": {
+      "nombre_legible": "Esmeralda montada",
+      "terminos_busqueda": [
+        "emerald ring",
+        "emerald pendant",
+        "emerald necklace",
+        "emerald earrings",
+        "emerald brooch",
+        "emerald jewelry",
+        "emerald bracelet",
+        "emerald tiara"
+      ],
+      "propias_encontradas": 27,
+      "propias_validas": 27,
+      "propias_eliminadas_corruptas": 0,
+      "propias_eliminadas_resolucion": 0,
+      "propias_eliminadas_no_rgb_gris": 0,
+      "propias_eliminadas_duplicados": 0,
+      "scraping_candidatos_encontrados": 180,
+      "scraping_descargadas": 158,
+      "scraping_errores_http": 0,
+      "eliminadas_corruptas": 0,
+      "eliminadas_resolucion": 0,
+      "eliminadas_no_rgb_gris": 3,
+      "eliminadas_duplicados": 7,
+      "scraping_validas": 148,
+      "eliminadas_scraping_total": 10,
+      "total_final": 175,
+      "cumple_min_150": true
+    }
+  },
+  "totales": {
+    "total_propias": 72,
+    "total_scraping_descargadas": 294,
+    "total_scraping_validas": 283,
+    "total_scraping_eliminadas": 11,
+    "total_final_dataset": 355,
+    "ratio_balance_clases": 0.9722
+  }
+}

@@ -1,0 +1,6 @@
+subconjunto,n_descriptores,cv_mean,cv_std
+Solo Color (8),8,0.742,0.0384
+Solo Forma (5),5,0.5564,0.0595
+Solo Textura (5),5,0.5569,0.0713
+Color + Forma (13),13,0.7458,0.0496
+Todas las familias (18),18,0.7699,0.0561

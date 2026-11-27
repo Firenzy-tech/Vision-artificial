@@ -1,0 +1,709 @@
+{
+  "clases": {
+    "clase_0": "esmeralda_suelta",
+    "clase_0_nombre": "Esmeralda suelta",
+    "clase_1": "esmeralda_montada",
+    "clase_1_nombre": "Esmeralda montada"
+  },
+  "dataset": {
+    "total_imagenes": 355,
+    "total_propias": 72,
+    "total_scraping": 283,
+    "ratio_balance": 0.9722,
+    "por_clase": {
+      "esmeralda_suelta": {
+        "nombre": "Esmeralda suelta",
+        "propia": 45,
+        "scraping": 135,
+        "total": 180
+      },
+      "esmeralda_montada": {
+        "nombre": "Esmeralda montada",
+        "propia": 27,
+        "scraping": 148,
+        "total": 175
+      }
+    },
+    "n_train": 248,
+    "n_test": 107,
+    "modo_estratificacion": "clase + origen"
+  },
+  "curacion": {
+    "fecha_ejecucion": "2026-11-26T21:12:43",
+    "fuente_principal": "Wikimedia Commons API (https://commons.wikimedia.org/w/api.php)",
+    "fuente_respaldo": "Openverse API (https://api.openverse.org/v1/images/)",
+    "user_agent": "ITM-VisionArtificial-Entrega4/1.0 (Proyecto academico CIGEM Grupo 190202024-4; contacto: estudiante@correo.itm.edu.co)",
+    "pausa_segundos": 0.5,
+    "criterios_curacion": {
+      "resolucion_minima_px": 150,
+      "dhash_distancia_hamming_max": 6,
+      "rechaza_corruptas": true,
+      "rechaza_no_rgb_o_gris": true,
+      "rechaza_duplicados_sha256_y_dhash": true
+    },
+    "robots_txt": {
+      "wikimedia_api": {
+        "robots_url": "https://commons.wikimedia.org/robots.txt",
+        "target_url": "https://commons.wikimedia.org/wiki/Category:Emeralds",
+        "http_status": 200,
+        "permitido": true,
+        "crawl_delay": null,
+        "nota": "robots.txt consultado y validado correctamente."
+      },
+      "wikimedia_upload": {
+        "robots_url": "https://upload.wikimedia.org/robots.txt",
+        "target_url": "https://upload.wikimedia.org/wikipedia/commons/",
+        "http_status": 200,
+        "permitido": true,
+        "crawl_delay": null,
+        "nota": "robots.txt consultado y validado correctamente."
+      },
+      "openverse_api": {
+        "robots_url": "https://api.openverse.org/robots.txt",
+        "target_url": "https://api.openverse.org/v1/images/",
+        "http_status": 200,
+        "permitido": false,
+        "crawl_delay": null,
+        "nota": "robots.txt consultado y validado correctamente."
+      }
+    },
+    "clases": {
+      "esmeralda_suelta": {
+        "nombre_legible": "Esmeralda suelta",
+        "terminos_busqueda": [
+          "emerald gemstone",
+          "cut emerald",
+          "emerald crystal",
+          "trapiche emerald",
+          "emerald mineral",
+          "emerald beryl"
+        ],
+        "propias_encontradas": 47,
+        "propias_validas": 45,
+        "propias_eliminadas_corruptas": 0,
+        "propias_eliminadas_resolucion": 0,
+        "propias_eliminadas_no_rgb_gris": 0,
+        "propias_eliminadas_duplicados": 2,
+        "scraping_candidatos_encontrados": 180,
+        "scraping_descargadas": 136,
+        "scraping_errores_http": 0,
+        "eliminadas_corruptas": 0,
+        "eliminadas_resolucion": 0,
+        "eliminadas_no_rgb_gris": 1,
+        "eliminadas_duplicados": 0,
+        "scraping_validas": 135,
+        "eliminadas_scraping_total": 1,
+        "total_final": 180,
+        "cumple_min_150": true
+      },
+      "esmeralda_montada": {
+        "nombre_legible": "Esmeralda montada",
+        "terminos_busqueda": [
+          "emerald ring",
+          "emerald pendant",
+          "emerald necklace",
+          "emerald earrings",
+          "emerald brooch",
+          "emerald jewelry",
+          "emerald bracelet",
+          "emerald tiara"
+        ],
+        "propias_encontradas": 27,
+        "propias_validas": 27,
+        "propias_eliminadas_corruptas": 0,
+        "propias_eliminadas_resolucion": 0,
+        "propias_eliminadas_no_rgb_gris": 0,
+        "propias_eliminadas_duplicados": 0,
+        "scraping_candidatos_encontrados": 180,
+        "scraping_descargadas": 158,
+        "scraping_errores_http": 0,
+        "eliminadas_corruptas": 0,
+        "eliminadas_resolucion": 0,
+        "eliminadas_no_rgb_gris": 3,
+        "eliminadas_duplicados": 7,
+        "scraping_validas": 148,
+        "eliminadas_scraping_total": 10,
+        "total_final": 175,
+        "cumple_min_150": true
+      }
+    },
+    "totales": {
+      "total_propias": 72,
+      "total_scraping_descargadas": 294,
+      "total_scraping_validas": 283,
+      "total_scraping_eliminadas": 11,
+      "total_final_dataset": 355,
+      "ratio_balance_clases": 0.9722
+    }
+  },
+  "alternativa_descartada": [
+    {
+      "imagen": "esmeralda_suelta_propia_003.jpg",
+      "componentes_umbral_fijo": 16,
+      "componentes_pipeline_elegido": 1,
+      "area_pct_umbral_fijo": 0.6,
+      "area_pct_pipeline_elegido": 1.8
+    },
+    {
+      "imagen": "esmeralda_suelta_scraping_003.jpg",
+      "componentes_umbral_fijo": 89,
+      "componentes_pipeline_elegido": 1,
+      "area_pct_umbral_fijo": 80.1,
+      "area_pct_pipeline_elegido": 13.2
+    },
+    {
+      "imagen": "esmeralda_montada_propia_003.jpg",
+      "componentes_umbral_fijo": 30,
+      "componentes_pipeline_elegido": 1,
+      "area_pct_umbral_fijo": 2.0,
+      "area_pct_pipeline_elegido": 7.7
+    },
+    {
+      "imagen": "esmeralda_montada_scraping_003.jpg",
+      "componentes_umbral_fijo": 41,
+      "componentes_pipeline_elegido": 1,
+      "area_pct_umbral_fijo": 82.7,
+      "area_pct_pipeline_elegido": 41.8
+    }
+  ],
+  "descriptores": {
+    "total": 18,
+    "familias": {
+      "Color": [
+        "H_mean",
+        "H_std",
+        "S_mean",
+        "S_std",
+        "a_mean",
+        "a_std",
+        "b_mean",
+        "b_std"
+      ],
+      "Forma": [
+        "area_relativa",
+        "circularidad",
+        "solidez",
+        "relacion_aspecto",
+        "excentricidad"
+      ],
+      "Textura": [
+        "tex_media",
+        "tex_std",
+        "tex_suavidad",
+        "tex_uniformidad",
+        "tex_entropia"
+      ]
+    },
+    "top_6": [
+      "a_mean",
+      "H_mean",
+      "S_mean",
+      "relacion_aspecto",
+      "excentricidad",
+      "b_std"
+    ],
+    "top_2": [
+      "a_mean",
+      "H_mean"
+    ],
+    "ranking_fisher": [
+      {
+        "descriptor": "a_mean",
+        "familia": "Color",
+        "media_esmeralda_suelta": -14.5019,
+        "std_esmeralda_suelta": 17.8238,
+        "media_esmeralda_montada": -0.1953,
+        "std_esmeralda_montada": 9.0485,
+        "fisher_J": 0.5123
+      },
+      {
+        "descriptor": "H_mean",
+        "familia": "Color",
+        "media_esmeralda_suelta": 55.2476,
+        "std_esmeralda_suelta": 30.7287,
+        "media_esmeralda_montada": 32.7497,
+        "std_esmeralda_montada": 32.6324,
+        "fisher_J": 0.2519
+      },
+      {
+        "descriptor": "S_mean",
+        "familia": "Color",
+        "media_esmeralda_suelta": 118.6108,
+        "std_esmeralda_suelta": 62.8068,
+        "media_esmeralda_montada": 96.2182,
+        "std_esmeralda_montada": 43.1137,
+        "fisher_J": 0.0864
+      },
+      {
+        "descriptor": "relacion_aspecto",
+        "familia": "Forma",
+        "media_esmeralda_suelta": 0.7708,
+        "std_esmeralda_suelta": 0.1811,
+        "media_esmeralda_montada": 0.6865,
+        "std_esmeralda_montada": 0.2317,
+        "fisher_J": 0.0821
+      },
+      {
+        "descriptor": "excentricidad",
+        "familia": "Forma",
+        "media_esmeralda_suelta": 0.6572,
+        "std_esmeralda_suelta": 0.1957,
+        "media_esmeralda_montada": 0.7328,
+        "std_esmeralda_montada": 0.1973,
+        "fisher_J": 0.0741
+      },
+      {
+        "descriptor": "b_std",
+        "familia": "Color",
+        "media_esmeralda_suelta": 7.7989,
+        "std_esmeralda_suelta": 4.7409,
+        "media_esmeralda_montada": 9.3318,
+        "std_esmeralda_montada": 4.965,
+        "fisher_J": 0.0499
+      },
+      {
+        "descriptor": "circularidad",
+        "familia": "Forma",
+        "media_esmeralda_suelta": 0.4488,
+        "std_esmeralda_suelta": 0.3069,
+        "media_esmeralda_montada": 0.3632,
+        "std_esmeralda_montada": 0.2399,
+        "fisher_J": 0.0482
+      },
+      {
+        "descriptor": "tex_uniformidad",
+        "familia": "Textura",
+        "media_esmeralda_suelta": 0.0107,
+        "std_esmeralda_suelta": 0.0191,
+        "media_esmeralda_montada": 0.0214,
+        "std_esmeralda_montada": 0.0584,
+        "fisher_J": 0.0307
+      },
+      {
+        "descriptor": "tex_entropia",
+        "familia": "Textura",
+        "media_esmeralda_suelta": 7.2072,
+        "std_esmeralda_suelta": 0.4784,
+        "media_esmeralda_montada": 7.033,
+        "std_esmeralda_montada": 0.8984,
+        "fisher_J": 0.0293
+      },
+      {
+        "descriptor": "solidez",
+        "familia": "Forma",
+        "media_esmeralda_suelta": 0.7783,
+        "std_esmeralda_suelta": 0.1992,
+        "media_esmeralda_montada": 0.7316,
+        "std_esmeralda_montada": 0.195,
+        "fisher_J": 0.028
+      },
+      {
+        "descriptor": "b_mean",
+        "familia": "Color",
+        "media_esmeralda_suelta": 11.8426,
+        "std_esmeralda_suelta": 11.5122,
+        "media_esmeralda_montada": 14.425,
+        "std_esmeralda_montada": 12.1147,
+        "fisher_J": 0.0239
+      },
+      {
+        "descriptor": "a_std",
+        "familia": "Color",
+        "media_esmeralda_suelta": 8.774,
+        "std_esmeralda_suelta": 3.9842,
+        "media_esmeralda_montada": 7.914,
+        "std_esmeralda_montada": 6.5311,
+        "fisher_J": 0.0126
+      },
+      {
+        "descriptor": "tex_suavidad",
+        "familia": "Textura",
+        "media_esmeralda_suelta": 0.0351,
+        "std_esmeralda_suelta": 0.0188,
+        "media_esmeralda_montada": 0.0337,
+        "std_esmeralda_montada": 0.0171,
+        "fisher_J": 0.0031
+      },
+      {
+        "descriptor": "tex_std",
+        "familia": "Textura",
+        "media_esmeralda_suelta": 0.1841,
+        "std_esmeralda_suelta": 0.0541,
+        "media_esmeralda_montada": 0.1802,
+        "std_esmeralda_montada": 0.0523,
+        "fisher_J": 0.0027
+      },
+      {
+        "descriptor": "H_std",
+        "familia": "Color",
+        "media_esmeralda_suelta": 16.1237,
+        "std_esmeralda_suelta": 12.8855,
+        "media_esmeralda_montada": 15.3062,
+        "std_esmeralda_montada": 10.6994,
+        "fisher_J": 0.0024
+      },
+      {
+        "descriptor": "area_relativa",
+        "familia": "Forma",
+        "media_esmeralda_suelta": 0.2535,
+        "std_esmeralda_suelta": 0.2026,
+        "media_esmeralda_montada": 0.2414,
+        "std_esmeralda_montada": 0.1861,
+        "fisher_J": 0.002
+      },
+      {
+        "descriptor": "tex_media",
+        "familia": "Textura",
+        "media_esmeralda_suelta": 0.4547,
+        "std_esmeralda_suelta": 0.1142,
+        "media_esmeralda_montada": 0.4599,
+        "std_esmeralda_montada": 0.1391,
+        "fisher_J": 0.0008
+      },
+      {
+        "descriptor": "S_std",
+        "familia": "Color",
+        "media_esmeralda_suelta": 45.6415,
+        "std_esmeralda_suelta": 13.9494,
+        "media_esmeralda_montada": 45.123,
+        "std_esmeralda_montada": 18.4422,
+        "fisher_J": 0.0005
+      }
+    ]
+  },
+  "clasificadores": {
+    "heuristico": {
+      "regla": "Si a_mean > -3.963 -> Esmeralda montada; en caso contrario -> Esmeralda suelta",
+      "usar_2d": false,
+      "train_accuracy": 0.7339,
+      "test": {
+        "accuracy": 0.6822,
+        "precision": 0.6667,
+        "recall": 0.717,
+        "f1": 0.6909,
+        "confusion_matrix": [
+          [
+            35,
+            19
+          ],
+          [
+            15,
+            38
+          ]
+        ],
+        "n_errores": 34
+      }
+    },
+    "knn": {
+      "best_k": 7,
+      "cv_resultados": [
+        {
+          "k": 1,
+          "cv_mean": 0.7417959183673469,
+          "cv_std": 0.0474787749329936
+        },
+        {
+          "k": 3,
+          "cv_mean": 0.7417959183673468,
+          "cv_std": 0.030787092499234732
+        },
+        {
+          "k": 5,
+          "cv_mean": 0.7659591836734693,
+          "cv_std": 0.03817546460043925
+        },
+        {
+          "k": 7,
+          "cv_mean": 0.7698775510204081,
+          "cv_std": 0.056080147323110306
+        },
+        {
+          "k": 9,
+          "cv_mean": 0.7498775510204082,
+          "cv_std": 0.04899278733815839
+        },
+        {
+          "k": 11,
+          "cv_mean": 0.7540408163265305,
+          "cv_std": 0.04960525559612795
+        }
+      ],
+      "best_cv_accuracy": 0.7699,
+      "test": {
+        "accuracy": 0.8318,
+        "precision": 0.8889,
+        "recall": 0.7547,
+        "f1": 0.8163,
+        "confusion_matrix": [
+          [
+            49,
+            5
+          ],
+          [
+            13,
+            40
+          ]
+        ],
+        "n_errores": 18
+      }
+    },
+    "svm": {
+      "best_C": 1.0,
+      "cv_resultados": [
+        {
+          "C": 0.1,
+          "cv_mean": 0.7097142857142857,
+          "cv_std": 0.02353428471969788
+        },
+        {
+          "C": 1.0,
+          "cv_mean": 0.782204081632653,
+          "cv_std": 0.04989792162262265
+        },
+        {
+          "C": 10.0,
+          "cv_mean": 0.7700408163265304,
+          "cv_std": 0.02507544634025182
+        }
+      ],
+      "best_cv_accuracy": 0.7822,
+      "test": {
+        "accuracy": 0.8318,
+        "precision": 0.8431,
+        "recall": 0.8113,
+        "f1": 0.8269,
+        "confusion_matrix": [
+          [
+            46,
+            8
+          ],
+          [
+            10,
+            43
+          ]
+        ],
+        "n_errores": 18
+      }
+    }
+  },
+  "comparacion_origen_test": {
+    "heuristico": {
+      "propia": {
+        "n": 21,
+        "accuracy": 0.7619,
+        "errores": 5
+      },
+      "scraping": {
+        "n": 86,
+        "accuracy": 0.6628,
+        "errores": 29
+      }
+    },
+    "knn": {
+      "propia": {
+        "n": 21,
+        "accuracy": 1.0,
+        "errores": 0
+      },
+      "scraping": {
+        "n": 86,
+        "accuracy": 0.7907,
+        "errores": 18
+      }
+    },
+    "svm": {
+      "propia": {
+        "n": 21,
+        "accuracy": 1.0,
+        "errores": 0
+      },
+      "scraping": {
+        "n": 86,
+        "accuracy": 0.7907,
+        "errores": 18
+      }
+    }
+  },
+  "errores_knn_test": [
+    {
+      "filename": "esmeralda_montada/esmeralda_montada_scraping_092.jpg",
+      "clase_real": "Esmeralda montada",
+      "clase_predicha": "Esmeralda suelta",
+      "origen": "scraping"
+    },
+    {
+      "filename": "esmeralda_montada/esmeralda_montada_scraping_112.jpg",
+      "clase_real": "Esmeralda montada",
+      "clase_predicha": "Esmeralda suelta",
+      "origen": "scraping"
+    },
+    {
+      "filename": "esmeralda_suelta/esmeralda_suelta_scraping_131.jpg",
+      "clase_real": "Esmeralda suelta",
+      "clase_predicha": "Esmeralda montada",
+      "origen": "scraping"
+    },
+    {
+      "filename": "esmeralda_montada/esmeralda_montada_scraping_008.jpg",
+      "clase_real": "Esmeralda montada",
+      "clase_predicha": "Esmeralda suelta",
+      "origen": "scraping"
+    },
+    {
+      "filename": "esmeralda_suelta/esmeralda_suelta_scraping_082.jpg",
+      "clase_real": "Esmeralda suelta",
+      "clase_predicha": "Esmeralda montada",
+      "origen": "scraping"
+    },
+    {
+      "filename": "esmeralda_montada/esmeralda_montada_scraping_036.jpg",
+      "clase_real": "Esmeralda montada",
+      "clase_predicha": "Esmeralda suelta",
+      "origen": "scraping"
+    },
+    {
+      "filename": "esmeralda_montada/esmeralda_montada_scraping_134.jpg",
+      "clase_real": "Esmeralda montada",
+      "clase_predicha": "Esmeralda suelta",
+      "origen": "scraping"
+    },
+    {
+      "filename": "esmeralda_montada/esmeralda_montada_scraping_093.jpg",
+      "clase_real": "Esmeralda montada",
+      "clase_predicha": "Esmeralda suelta",
+      "origen": "scraping"
+    },
+    {
+      "filename": "esmeralda_montada/esmeralda_montada_scraping_144.jpg",
+      "clase_real": "Esmeralda montada",
+      "clase_predicha": "Esmeralda suelta",
+      "origen": "scraping"
+    },
+    {
+      "filename": "esmeralda_montada/esmeralda_montada_scraping_131.jpg",
+      "clase_real": "Esmeralda montada",
+      "clase_predicha": "Esmeralda suelta",
+      "origen": "scraping"
+    },
+    {
+      "filename": "esmeralda_montada/esmeralda_montada_scraping_015.jpg",
+      "clase_real": "Esmeralda montada",
+      "clase_predicha": "Esmeralda suelta",
+      "origen": "scraping"
+    },
+    {
+      "filename": "esmeralda_suelta/esmeralda_suelta_scraping_080.jpg",
+      "clase_real": "Esmeralda suelta",
+      "clase_predicha": "Esmeralda montada",
+      "origen": "scraping"
+    },
+    {
+      "filename": "esmeralda_montada/esmeralda_montada_scraping_018.jpg",
+      "clase_real": "Esmeralda montada",
+      "clase_predicha": "Esmeralda suelta",
+      "origen": "scraping"
+    },
+    {
+      "filename": "esmeralda_montada/esmeralda_montada_scraping_063.jpg",
+      "clase_real": "Esmeralda montada",
+      "clase_predicha": "Esmeralda suelta",
+      "origen": "scraping"
+    },
+    {
+      "filename": "esmeralda_suelta/esmeralda_suelta_scraping_071.jpg",
+      "clase_real": "Esmeralda suelta",
+      "clase_predicha": "Esmeralda montada",
+      "origen": "scraping"
+    },
+    {
+      "filename": "esmeralda_montada/esmeralda_montada_scraping_104.jpg",
+      "clase_real": "Esmeralda montada",
+      "clase_predicha": "Esmeralda suelta",
+      "origen": "scraping"
+    },
+    {
+      "filename": "esmeralda_montada/esmeralda_montada_scraping_035.jpg",
+      "clase_real": "Esmeralda montada",
+      "clase_predicha": "Esmeralda suelta",
+      "origen": "scraping"
+    },
+    {
+      "filename": "esmeralda_suelta/esmeralda_suelta_scraping_069.jpg",
+      "clase_real": "Esmeralda suelta",
+      "clase_predicha": "Esmeralda montada",
+      "origen": "scraping"
+    }
+  ],
+  "iteraciones": {
+    "filtros_espaciales": [
+      {
+        "filtro": "Sin filtro",
+        "componentes_otsu_promedio": 136.21,
+        "solidez_media": 0.7106
+      },
+      {
+        "filtro": "Gaussiano 5x5",
+        "componentes_otsu_promedio": 42.75,
+        "solidez_media": 0.748
+      },
+      {
+        "filtro": "Mediana 5x5",
+        "componentes_otsu_promedio": 34.33,
+        "solidez_media": 0.7384
+      }
+    ],
+    "ablacion_descriptores": [
+      {
+        "subconjunto": "Solo Color (8)",
+        "n_descriptores": 8,
+        "cv_mean": 0.742,
+        "cv_std": 0.0384
+      },
+      {
+        "subconjunto": "Solo Forma (5)",
+        "n_descriptores": 5,
+        "cv_mean": 0.5564,
+        "cv_std": 0.0595
+      },
+      {
+        "subconjunto": "Solo Textura (5)",
+        "n_descriptores": 5,
+        "cv_mean": 0.5569,
+        "cv_std": 0.0713
+      },
+      {
+        "subconjunto": "Color + Forma (13)",
+        "n_descriptores": 13,
+        "cv_mean": 0.7458,
+        "cv_std": 0.0496
+      },
+      {
+        "subconjunto": "Todas las familias (18)",
+        "n_descriptores": 18,
+        "cv_mean": 0.7699,
+        "cv_std": 0.0561
+      }
+    ],
+    "mlp": {
+      "cv_mean": 0.7984,
+      "cv_std": 0.038,
+      "test": {
+        "accuracy": 0.8224,
+        "precision": 0.8269,
+        "recall": 0.8113,
+        "f1": 0.819,
+        "confusion_matrix": [
+          [
+            45,
+            9
+          ],
+          [
+            10,
+            43
+          ]
+        ],
+        "n_errores": 19
+      }
+    }
+  }
+}

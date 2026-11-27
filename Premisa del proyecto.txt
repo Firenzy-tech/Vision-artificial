@@ -1,0 +1,13 @@
+# Sistema inteligente de valoración gemológica mediante visión artificial
+
+El proyecto propone el diseño y desarrollo de un sistema inteligente basado en técnicas de visión artificial y aprendizaje automático, orientado al análisis y valoración asistida de piedras preciosas, con especial énfasis en las esmeraldas colombianas.
+
+La iniciativa surge de mi participación como socio tecnológico en un emprendimiento relacionado con el Centro de Investigación Gemológico de Medellín (CIGEM), cuyo modelo de negocio se fundamenta en el análisis gemológico, la tasación y la generación de certificados que respaldan las características y el valor de las piedras preciosas.
+
+La propuesta busca incorporar tecnología de procesamiento digital de imágenes, algoritmos de análisis de color y modelos de inteligencia artificial para identificar, medir y caracterizar atributos visuales relevantes de las gemas. Entre estos atributos se encuentran el tono, la saturación, la luminosidad, la distribución cromática, la transparencia aparente y las características internas observables mediante técnicas de captura especializadas.
+
+El propósito es desarrollar una herramienta que permita estandarizar progresivamente los criterios de evaluación visual, reducir la subjetividad asociada a la percepción humana y generar información cuantificable, trazable y reproducible que sirva como apoyo al profesional gemólogo durante los procesos de valoración y certificación.
+
+La relevancia de esta iniciativa se fundamenta en el valor económico, comercial y cultural de las piedras preciosas colombianas, particularmente de la esmeralda, un producto emblemático de exportación nacional. En este mercado, la precisión y confiabilidad de la información gemológica representan elementos fundamentales para fortalecer la confianza comercial, respaldar las transacciones y mejorar la competitividad internacional.
+
+De esta manera, el proyecto pretende conectar la experiencia tradicional de la gemología con las capacidades de la inteligencia artificial, convirtiendo la visión artificial en una herramienta de apoyo para evolucionar hacia procesos de valoración más objetivos, tecnológicos y estandarizados, sin sustituir el criterio ni la responsabilidad del especialista que emite la certificación.
